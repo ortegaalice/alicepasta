@@ -18,21 +18,19 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
        appBar: AppBar(title: Text("Tela de Login"),),
-       body:Container(
-      child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                //elementos de input de texto
-                Text("Email"),
-                TextField(),
-                Text("Senha"),
-                TextField(),
-                TextButton(onPressed: (){}, child: Text("Enviar"))
-             ],
-            ),
-          ),
-        ),
+       body:Center(
+             child: Column(
+               mainAxisAlignment: MainAxisAlignment.center,
+               children: [
+                 //elementos de input de texto
+                 Text("Email"),
+                 TextField(),
+                 Text("Senha"),
+                 TextField(),
+                 TextButton(onPressed: (){}, child: Text("Enviar"))
+              ],
+             ),
+           ),
         bottomNavigationBar: BottomNavigationBar(
           items://permite mais de 1, abre colchetes
           [
